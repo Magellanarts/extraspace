@@ -32,4 +32,23 @@
       }
     }
   }
+
+  &__social {
+    a {
+      color: var(--green);
+      border: 1px solid var(--green);
+      border-radius: 50px;
+      height: 39px;
+      width: 39px;
+      display: block;
+      text-align: center;
+      line-height: 39px;
+      font-size: 22px;
+    }
+  }
+
+  &__copyright {
+    font-size: 12px;
+    color: var(--grey--dark);
+  }
 }
