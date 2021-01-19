@@ -1,22 +1,21 @@
-:root {
-}
-
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-html {
-  font-size: 13px;
+@import 'styles/reset';
 
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
-  }
+@import 'styles/base';
 
-  @media screen and (min-width: 1000px) {
-    font-size: 15px;
-  }
+@import 'styles/layout';
 
-  @media screen and (min-width: 1400px) {
-    font-size: 16px;
-  }
-}
+@import 'styles/pages/home';
+
+@import 'styles/components/site-header';
+@import 'styles/components/site-brow';
+@import 'styles/components/button';
+@import 'styles/components/site-footer';
+
+@import 'styles/utilities/text';
+@import 'styles/utilities/colors';
+
+@import 'styles/utilities/general';

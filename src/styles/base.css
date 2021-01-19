@@ -1,0 +1,31 @@
+:root {
+  --green: #91c717;
+  --grey--primary: #54565b;
+  --blue: #0f8ae7;
+  --orange: #fe8300;
+  --grey--dark: #979797;
+  --grey--light: #ededed;
+  --body-font: 'Arial';
+  --title-font: rama-gothic-e, sans-serif;
+}
+
+html {
+  font-size: 13px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    font-size: 15px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--grey--primary);
+}

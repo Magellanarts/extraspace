@@ -1,0 +1,46 @@
+.u-primary-heading {
+  color: var(--green);
+  text-transform: uppercase;
+  var: 600 5.25rem/1 var(--title-font);
+
+  @media screen and (min-width: 768px) {
+    var: 600 7.5rem/1 var(--title-font);
+  }
+}
+
+.u-secondary-heading {
+  text-transform: uppercase;
+  color: var(--green);
+  font: 600 1.5rem/2.375rem var(--title-font);
+
+  @media screen and (min-width: 768px) {
+    font: 600 2rem/2.375rem var(--title-font);
+  }
+}
+
+.u-tertiary-heading {
+  text-transform: uppercase;
+  font: 600 2.25rem/3.625rem var(--title-font);
+
+  @media screen and (min-width: 768px) {
+    font: 600 3rem/3.625rem var(--title-font);
+  }
+}
+
+.u-large-heading {
+  color: var(--green);
+  text-transform: uppercase;
+  font: 600 4rem/1 var(--title-font);
+
+  @media screen and (min-width: 768px) {
+    font: 600 6rem/1 var(--title-font);
+  }
+}
+
+.u-large-body-copy {
+  font: 400 1.25rem/1.75rem var(--body-font);
+}
+
+.u-body-copy {
+  font: 400 1.125rem/1.75rem var(--body-font);
+}

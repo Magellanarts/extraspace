@@ -1,0 +1,19 @@
+.c-site-header {
+  &__main {
+    height: 124px;
+  }
+
+  &__navigation {
+    li {
+      &:not(:first-child) {
+        margin-left: 30px;
+      }
+
+      a {
+        &:hover {
+          color: var(--green);
+        }
+      }
+    }
+  }
+}

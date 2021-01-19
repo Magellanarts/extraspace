@@ -1,0 +1,20 @@
+.u-bg-green {
+  background-color: var(--green);
+}
+
+.u-bg-blue {
+  background-color: var(--blue);
+}
+
+.u-bg-grey-primary {
+  background-color: var(--grey--primary);
+}
+
+/* Text colors */
+.u-text-green {
+  color: var(--green);
+}
+
+.u-text-white {
+  color: #fff;
+}

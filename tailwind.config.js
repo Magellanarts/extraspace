@@ -5,7 +5,14 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        '22': '4.5rem'
+      },
+      maxWidth: {
+        'max-w-460': '460px' 
+      }
+    }
   },
   variants: {
     extend: {},
