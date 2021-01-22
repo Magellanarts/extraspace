@@ -18,3 +18,11 @@
 .u-text-white {
   color: #fff;
 }
+
+.u-text-blue {
+  color: var(--blue) !important;
+}
+
+.u-text-grey--primary {
+  color: var(--grey--primary) !important;
+}

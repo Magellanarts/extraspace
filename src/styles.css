@@ -9,11 +9,15 @@
 @import 'styles/layout';
 
 @import 'styles/pages/home';
+@import 'styles/pages/portfolio';
+@import 'styles/pages/platform';
 
 @import 'styles/components/site-header';
 @import 'styles/components/site-brow';
 @import 'styles/components/button';
 @import 'styles/components/hero';
+@import 'styles/components/page-intro';
+@import 'styles/components/page-atf';
 @import 'styles/components/site-footer';
 
 @import 'styles/utilities/text';

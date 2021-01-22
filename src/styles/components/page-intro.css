@@ -1,0 +1,38 @@
+.c-page-intro {
+  color: var(--green);
+  font: 700 1.5rem/2rem var(--body-font);
+
+  figure {
+    margin-right: 30px;
+  }
+
+  &__quote {
+    span {
+      color: var(--grey--primary);
+    }
+
+    footer {
+      color: var(--grey--primary);
+      font: 700 1.125rem/1.5rem var(--body-font);
+    }
+
+    &__title {
+      font-weight: 400;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    figure {
+      flex: 0 0 337px;
+    }
+
+    &__quote {
+      padding-right: 15%;
+
+      &.-wide {
+        padding-right: 0;
+        max-width: 950px;
+      }
+    }
+  }
+}

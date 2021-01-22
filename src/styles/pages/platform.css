@@ -1,0 +1,17 @@
+.platform-areas {
+  > div {
+    padding-top: 8px;
+    border-top: solid 2px transparent;
+
+    &:first-child {
+      border-top-color: var(--blue);
+    }
+    &:nth-child(2) {
+      border-top-color: var(--green);
+    }
+
+    &:nth-child(3) {
+      border-top-color: var(--grey--primary);
+    }
+  }
+}

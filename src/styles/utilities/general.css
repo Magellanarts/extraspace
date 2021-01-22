@@ -13,3 +13,7 @@
     margin-bottom: 0;
   }
 }
+
+.u-vertical-gradient {
+  background: linear-gradient(180deg, #ededed 7%, rgba(237, 237, 237, 0) 35%);
+}

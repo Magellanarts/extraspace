@@ -3,4 +3,23 @@
   max-width: 1262px;
   margin-left: auto;
   margin-right: auto;
+
+  &.-flush-left {
+  }
+}
+
+.l-page-main-columns {
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    &__main {
+      max-width: 827px;
+      width: 68%;
+    }
+
+    &__aside {
+      max-width: 369px;
+      margin-right: 4%;
+    }
+  }
 }

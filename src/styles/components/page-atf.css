@@ -1,0 +1,40 @@
+.c-page-atf {
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    &__content {
+      &.-ceo {
+        max-width: 582px;
+      }
+
+      &.-portfolio {
+        max-width: 648px;
+      }
+
+      &.-performance {
+        max-width: 697px;
+      }
+    }
+
+    &__graphic {
+      &.-ceo {
+        max-width: 537px;
+      }
+
+      &.-portfolio {
+        max-width: 539px;
+      }
+
+      &.-people {
+        max-width: 445px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    &.-platform {
+      max-width: 705px;
+      width: 68%;
+    }
+  }
+}

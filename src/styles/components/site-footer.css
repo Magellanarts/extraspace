@@ -1,4 +1,7 @@
 .c-site-footer {
+  > .l-content-container {
+    border-top: solid 1px var(--green);
+  }
   &__logo {
     font-size: 1.125rem;
   }

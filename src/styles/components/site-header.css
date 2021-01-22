@@ -14,6 +14,12 @@
           color: var(--green);
         }
       }
+
+      &.active {
+        a {
+          color: var(--green);
+        }
+      }
     }
   }
 }
