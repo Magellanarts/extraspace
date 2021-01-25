@@ -241,8 +241,11 @@ body {
   .c-site-header__main.-with-border {
       border-bottom: solid 1px var(--green);
     }
+  .c-site-header__navigation {
+    display: none;
+  }
   .c-site-header__navigation li:not(:first-child) {
-        margin-left: 30px;
+        margin-left: 28px;
       }
   .c-site-header__navigation li a:hover {
           color: var(--green);
@@ -250,6 +253,11 @@ body {
   .c-site-header__navigation li.active a {
           color: var(--green);
         }
+  @media screen and (min-width: 1140px) {
+  .c-site-header__navigation {
+      display: block
+  }
+    }
 
 .c-site-brow li {
     margin-left: 2px;
@@ -432,7 +440,7 @@ body {
 .u-primary-heading {
   color: var(--green);
   text-transform: uppercase;
-  font: 600 5.25rem/3.35rem var(--title-font);
+  font: 600 3.375rem/4rem var(--title-font);
 }
   @media screen and (min-width: 768px) {.u-primary-heading {
     font: 600 7.5rem/4.75rem var(--title-font)
@@ -442,7 +450,7 @@ body {
 .u-secondary-heading {
   text-transform: uppercase;
   color: var(--green);
-  font: 600 1.5rem/2.375rem var(--title-font);
+  font: 600 1.75rem/2.375rem var(--title-font);
 }
 
 @media screen and (min-width: 768px) {
@@ -1104,6 +1112,10 @@ video {
   justify-content: space-between;
 }
 
+.order-last {
+  order: 9999;
+}
+
 .h-full {
   height: 100%;
 }
@@ -1394,6 +1406,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }

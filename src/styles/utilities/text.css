@@ -1,7 +1,7 @@
 .u-primary-heading {
   color: var(--green);
   text-transform: uppercase;
-  font: 600 5.25rem/3.35rem var(--title-font);
+  font: 600 3.375rem/4rem var(--title-font);
 
   @media screen and (min-width: 768px) {
     font: 600 7.5rem/4.75rem var(--title-font);
@@ -11,7 +11,7 @@
 .u-secondary-heading {
   text-transform: uppercase;
   color: var(--green);
-  font: 600 1.5rem/2.375rem var(--title-font);
+  font: 600 1.75rem/2.375rem var(--title-font);
 
   @media screen and (min-width: 768px) {
     font: 600 2rem/2.375rem var(--title-font);
