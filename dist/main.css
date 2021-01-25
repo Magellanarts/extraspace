@@ -221,9 +221,26 @@ body {
       border-top-color: var(--grey--primary);
     }
 
+.sustainability-blocks__heading {
+    text-transform: uppercase;
+    color: #fff;
+    font: 600 1.75rem/2.125rem var(--title-font);
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+  .sustainability-blocks__content {
+    font: 400 1.75rem/2.25rem var(--title-font);
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-align: center;
+  }
+
 .c-site-header__main {
     height: 124px;
   }
+  .c-site-header__main.-with-border {
+      border-bottom: solid 1px var(--green);
+    }
   .c-site-header__navigation li:not(:first-child) {
         margin-left: 30px;
       }
@@ -237,22 +254,25 @@ body {
 .c-site-brow li {
     margin-left: 2px;
   }
-  .c-site-brow a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 124px;
-    background: var(--grey--primary);
-    color: #fff;
-    font: 600 14px/17px var(--title-font);
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    text-align: center;
-  }
-  .c-site-brow a:hover {
-      background: var(--grey--dark);
+  .c-site-brow li a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 124px;
+      background: var(--grey--primary);
+      color: #fff;
+      font: 600 14px/17px var(--title-font);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      text-align: center;
     }
+  .c-site-brow li a:hover {
+        background: var(--grey--dark);
+      }
+  .c-site-brow li.active a {
+        background: var(--grey--dark);
+      }
 
 .c-btn {
   min-width: 100px;
@@ -336,6 +356,9 @@ body {
       .c-page-atf__content.-performance {
         max-width: 697px;
       }
+      .c-page-atf__content.-eg {
+        max-width: 705px;
+      }
       .c-page-atf__graphic.-ceo {
         max-width: 537px;
       }
@@ -344,6 +367,9 @@ body {
       }
       .c-page-atf__graphic.-people {
         max-width: 445px;
+      }
+      .c-page-atf__graphic.-eg {
+        max-width: 402px;
       }
   }
   @media screen and (min-width: 1024px) {
@@ -372,9 +398,21 @@ body {
         font: 600 15px/18px var(--title-font);
         letter-spacing: 0.03em;
       }
+  .c-site-footer__main-navigation li a:hover {
+          color: var(--green);
+        }
+  .c-site-footer__main-navigation li.active a {
+          color: var(--green);
+        }
   .c-site-footer__secondary-navigation li a {
         font-size: 14px;
       }
+  .c-site-footer__secondary-navigation li a:hover {
+          color: var(--green);
+        }
+  .c-site-footer__secondary-navigation li.active a {
+          color: var(--green);
+        }
   .c-site-footer__social a {
       color: var(--green);
       border: 1px solid var(--green);
@@ -482,6 +520,9 @@ body {
   .u-content ol:not(:last-child) {
     margin-bottom: 1.5rem;
   }
+  .u-content ul li {
+      list-style: disc inside;
+    }
 
 .u-stacked-spacing {
   margin-bottom: 1rem;
@@ -1104,12 +1145,20 @@ video {
   margin-bottom: 3rem;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
 }
 
 .mb-20 {
   margin-bottom: 5rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
 }
 
 .-mb-24 {
@@ -1122,6 +1171,15 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .py-12 {
@@ -1146,6 +1204,10 @@ video {
 
 .pt-7 {
   padding-top: 1.75rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .pb-10 {
@@ -1205,6 +1267,10 @@ video {
   --tw-ring-shadow: 0 0 #0000;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-right {
   text-align: right;
 }
@@ -1220,6 +1286,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.gap-7 {
+  gap: 1.75rem;
 }
 
 .gap-8 {
@@ -1377,6 +1447,10 @@ video {
     --tw-scale-x: 1;
     --tw-scale-y: 1;
     transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:-translate-y-8 {
+    --tw-translate-y: -2rem;
   }
 
   .md\:-translate-y-16 {

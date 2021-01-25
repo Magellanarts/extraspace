@@ -1,6 +1,10 @@
 .c-site-header {
   &__main {
     height: 124px;
+
+    &.-with-border {
+      border-bottom: solid 1px var(--green);
+    }
   }
 
   &__navigation {

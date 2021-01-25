@@ -1,0 +1,16 @@
+.sustainability-blocks {
+  &__heading {
+    text-transform: uppercase;
+    color: #fff;
+    font: 600 1.75rem/2.125rem var(--title-font);
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+
+  &__content {
+    font: 400 1.75rem/2.25rem var(--title-font);
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-align: center;
+  }
+}

@@ -24,6 +24,15 @@
       a {
         font: 600 15px/18px var(--title-font);
         letter-spacing: 0.03em;
+
+        &:hover {
+          color: var(--green);
+        }
+      }
+      &.active {
+        a {
+          color: var(--green);
+        }
       }
     }
   }
@@ -32,6 +41,14 @@
     li {
       a {
         font-size: 14px;
+        &:hover {
+          color: var(--green);
+        }
+      }
+      &.active {
+        a {
+          color: var(--green);
+        }
       }
     }
   }

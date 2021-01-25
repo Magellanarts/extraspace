@@ -14,6 +14,10 @@
       &.-performance {
         max-width: 697px;
       }
+
+      &.-eg {
+        max-width: 705px;
+      }
     }
 
     &__graphic {
@@ -27,6 +31,10 @@
 
       &.-people {
         max-width: 445px;
+      }
+
+      &.-eg {
+        max-width: 402px;
       }
     }
   }

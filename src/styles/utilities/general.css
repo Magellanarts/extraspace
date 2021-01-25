@@ -4,6 +4,12 @@
   ol:not(:last-child) {
     margin-bottom: 1.5rem;
   }
+
+  ul {
+    li {
+      list-style: disc inside;
+    }
+  }
 }
 
 .u-stacked-spacing {
