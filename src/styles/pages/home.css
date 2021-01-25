@@ -43,3 +43,23 @@
     max-width: 68%;
   }
 }
+
+.home-landing {
+  padding-top: 3rem;
+
+  &__label {
+    color: var(--grey--dark);
+  }
+
+  &__heading {
+    font: 600 3.375rem/1 var(--title-font);
+    div {
+      font: 600 5.25rem/4.625rem var(--title-font);
+    }
+  }
+
+  &__subheading {
+    font: 600 2.25rem/2.6875rem var(--title-font);
+    color: var(--grey--dark);
+  }
+}

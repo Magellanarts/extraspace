@@ -1,7 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-
 module.exports = {
   mode: 'production',
   module: {
@@ -10,7 +9,7 @@ module.exports = {
         test: /\.css$/,
         use: [
           "style-loader", 
-          { loader: MiniCssExtractPlugin.loader},
+          // { loader: MiniCssExtractPlugin.loader},
           { loader: "css-loader", options: { importLoaders: 1 } },
           "postcss-loader",
         ],
