@@ -47,6 +47,35 @@
 .home-landing {
   padding-top: 3rem;
 
+  .glide {
+    max-width: 404px;
+    overflow: hidden;
+
+    .glide__bullets {
+      height: 15px;
+    }
+
+    .glide__bullet {
+      width: 9px;
+      height: 9px;
+      border-radius: 50px;
+      background: #e0e0e0;
+      transition: 0.2s linear;
+      cursor: pointer;
+      outline: none;
+
+      &:hover {
+        background: var(--green);
+      }
+
+      &--active {
+        height: 15px;
+        width: 15px;
+        background: var(--green);
+      }
+    }
+  }
+
   &__label {
     color: var(--grey--dark);
   }

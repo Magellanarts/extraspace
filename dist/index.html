@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://use.typekit.net/wly8jyn.css" />
-  <!-- <link rel="stylesheet" href="main.css"> -->
+  <link rel="stylesheet" href="main.css" />
 
   <title>ExtraSpace Storage</title>
 </head>
@@ -56,7 +56,7 @@
   </header>
 
   <section class="home-landing">
-    <div class="l-content-container">
+    <div class="l-content-container relative z-10">
       <h4 class="c-hero__label home-landing__label uppercase mb-2">
         2020 Annual Report
       </h4>
@@ -65,10 +65,10 @@
         for a better tomorrow
       </h2>
 
-      <div class="glide mb-5">
-        <div class="glide__bullets" data-glide-el="controls[nav]">
-          <button class="glide__bullet" data-glide-dir="=0"></button>
-          <button class="glide__bullet" data-glide-dir="=1"></button>
+      <div class="glide mb-6">
+        <div class="glide__bullets flex items-center mb-4" data-glide-el="controls[nav]">
+          <button class="glide__bullet mr-2" data-glide-dir="=0"></button>
+          <button class="glide__bullet mr-2" data-glide-dir="=1"></button>
           <button class="glide__bullet" data-glide-dir="=2"></button>
         </div>
         <div class="glide__track" data-glide-el="track">
@@ -94,7 +94,8 @@
 
       <a href="#" class="c-btn u-bg-blue">Learn more</a>
     </div>
-    <img src="i/hero-home.png" alt="" />
+    <img src="i/hero-home.png"
+      class="transform -translate-y-12 -mb-12 md:-translate-y-48 md:-mb-48 lg:-translate-y-72 lg:-mb-72" alt="" />
   </section>
 
   <!-- CEO Letter -->
@@ -298,7 +299,7 @@
       </div>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
   <script src="main.js"></script>
 
   <script src="https://kit.fontawesome.com/982697a1b9.js" crossorigin="anonymous"></script>

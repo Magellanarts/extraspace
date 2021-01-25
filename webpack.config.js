@@ -9,7 +9,11 @@ module.exports = {
         test: /\.css$/,
         use: [
           "style-loader", 
-          // { loader: MiniCssExtractPlugin.loader},
+          { loader: MiniCssExtractPlugin.loader,
+          options: {
+            esModule: false,
+          },
+          },
           { loader: "css-loader", options: { importLoaders: 1 } },
           "postcss-loader",
         ],
