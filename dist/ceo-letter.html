@@ -130,28 +130,31 @@
   </section>
 
   <!-- Slider -->
-  <section class="c-slider flex justify-end">
-    <img class="c-slider__graphic" src="i/ceo-letter-slider.png" alt="" />
-    <div class="absolute w-full h-full">
-      <div class="l-content-container flex items-center h-full">
+  <section class="c-slider flex flex-col lg:flex-row justify-end mb-44">
+    <img class="c-slider__graphic order-last" src="i/ceo-letter-slider.png" alt="" />
+    <div class="lg:absolute w-full h-full">
+      <div class="l-content-container flex items-center h-full relative">
         <div class="c-slider__container">
-          <div class="glide">
-            <div class="glide__bullets flex items-center mb-4" data-glide-el="controls[nav]">
-              <button class="glide__bullet mr-2" data-glide-dir="=0"></button>
-              <button class="glide__bullet mr-2" data-glide-dir="=1"></button>
-              <button class="glide__bullet" data-glide-dir="=2"></button>
-            </div>
-            <div class="glide__track" data-glide-el="track">
-              <ul class="glide__slides">
-                <li class="glide__slide">
-                  <h2 class="c-slider__heading">
-                    X.X million calls<br />
-                    <span class="uppercase">to call center</span>
-                  </h2>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <ul class="my-slider" data-position="bottom">
+            <li>
+              <h2 class="c-slider__heading">
+                X.X million calls<br />
+                <span class="uppercase">to call center</span>
+              </h2>
+            </li>
+            <li>
+              <h2 class="c-slider__heading">
+                X.X million calls<br />
+                <span class="uppercase">to call center</span>
+              </h2>
+            </li>
+            <li>
+              <h2 class="c-slider__heading">
+                X.X million calls<br />
+                <span class="uppercase">to call center</span>
+              </h2>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

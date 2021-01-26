@@ -47,15 +47,12 @@
 .home-landing {
   padding-top: 3rem;
 
-  .glide {
+  .tns-nav {
     max-width: 404px;
     overflow: hidden;
+    margin-bottom: 1.25rem;
 
-    .glide__bullets {
-      height: 15px;
-    }
-
-    .glide__bullet {
+    button {
       width: 9px;
       height: 9px;
       border-radius: 50px;
@@ -68,7 +65,7 @@
         background: var(--green);
       }
 
-      &--active {
+      &.tns-nav-active {
         height: 15px;
         width: 15px;
         background: var(--green);

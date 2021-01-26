@@ -11,6 +11,9 @@ module.exports = {
       },
       maxWidth: {
         'max-w-460': '460px' 
+      },
+      screens: {
+        'slider' : '960px'
       }
     }
   },

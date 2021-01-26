@@ -1,9 +1,15 @@
 import "./styles.css"
-import "../node_modules/@glidejs/glide/dist/glide.min.js"
+import { tns } from "../node_modules/tiny-slider/src/tiny-slider"
 
-import Glide from '@glidejs/glide'
-
-new Glide('.glide', {
-  type: 'carousel',
-  autoplay: 5000
-}).mount();
+var slider = tns({
+  container: '.my-slider',
+  items: 1,
+  slideBy: 'page',
+  autoplay: true,
+  mode: 'gallery',
+  controls: false,
+  nav: true,
+  autoplayButton: false,
+  autoplayButtonOutput: false,
+  navPosition: document.querySelector('.my-slider').getAttribute('data-position') ? document.querySelector('.my-slider').getAttribute('data-position')  : 'top'
+});
