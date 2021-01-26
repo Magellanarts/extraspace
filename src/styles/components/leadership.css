@@ -1,0 +1,73 @@
+.c-leadership {
+  position: relative;
+  overflow: hidden;
+
+  &__aside {
+    position: relative;
+    z-index: 10;
+
+    h2,
+    ol {
+      position: relative;
+      z-index: 10;
+    }
+
+    &:before {
+      content: '';
+      background: var(--green);
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 400%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex: 0 0 230px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      flex: 0 0 360px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      flex: 0 0 34%;
+    }
+  }
+
+  &__photo {
+    position: relative;
+    z-index: 10;
+    @media screen and (min-width: 768px) {
+      flex: 0 0 12rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+      flex: 0 0 24rem;
+    }
+  }
+
+  &__main {
+    position: relative;
+    z-index: 10;
+    font: 400 1rem/1.5rem var(--body-font);
+
+    h3 {
+      font: 700 1.125rem/1.5rem var(--body-font);
+    }
+  }
+
+  &__list {
+    li {
+      cursor: pointer;
+      font: 700 1.125rem/1.875rem var(--body-font);
+      color: var(--grey--primary);
+
+      &:hover,
+      &.-is-active {
+        color: #fff;
+      }
+    }
+  }
+}
