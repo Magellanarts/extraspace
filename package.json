@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
+    "aos": "^2.3.4",
     "php2html": "^4.0.0",
     "postcss-loader": "^4.1.0",
     "tiny-slider": "^2.9.3"

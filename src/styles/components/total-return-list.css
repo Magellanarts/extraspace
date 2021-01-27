@@ -1,0 +1,96 @@
+.c-total-return-list {
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__logo {
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+
+    @media screen and (max-width: 768px) {
+      width: 110px;
+    }
+
+    @media screen and (max-width: 560px) {
+      width: 60px;
+    }
+  }
+
+  &__bar {
+    flex: 1;
+
+    &__inner {
+      height: 2.5rem;
+      background-color: var(--grey--dark);
+      color: #fff;
+      display: flex;
+      justify-content: flex-end;
+
+      font-weight: 700;
+      font-size: 1.35rem;
+      line-height: 2.5rem;
+      width: 0;
+      overflow: hidden;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
+
+      @media screen and (max-width: 560px) {
+        font-size: 0.85rem;
+        padding-right: 0.25rem;
+      }
+
+      &.-green {
+        background-color: var(--green);
+      }
+
+      &.aos-animate {
+        padding-right: 0.5rem;
+        @media screen and (max-width: 560px) {
+          padding-right: 0.25rem;
+        }
+
+        &.-extraspace {
+          width: 100%;
+        }
+
+        &.-costco {
+          width: 70%;
+        }
+
+        &.-google {
+          width: 59%;
+        }
+
+        &.-disney {
+          width: 54%;
+        }
+
+        &.-jpmorgan {
+          width: 35%;
+        }
+
+        &.-sp500 {
+          width: 32%;
+        }
+
+        &.-public-storage {
+          width: 26%;
+        }
+
+        &.-berkshire {
+          width: 23%;
+        }
+
+        &.-msci {
+          width: 12%;
+        }
+      }
+    }
+  }
+}
