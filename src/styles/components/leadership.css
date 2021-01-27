@@ -16,11 +16,15 @@
       content: '';
       background: var(--green);
       position: absolute;
-      right: 0;
+      right: -10%;
       top: 0;
       width: 400%;
       height: 100%;
       z-index: 1;
+
+      @media screen and (min-width: 768px) {
+        right: 0;
+      }
     }
 
     @media screen and (min-width: 768px) {
@@ -39,6 +43,7 @@
   &__photo {
     position: relative;
     z-index: 10;
+
     @media screen and (min-width: 768px) {
       flex: 0 0 12rem;
     }
@@ -55,6 +60,18 @@
 
     h3 {
       font: 700 1.125rem/1.5rem var(--body-font);
+    }
+  }
+
+  &__bio,
+  &__img {
+    display: none;
+    opacity: 0;
+    transition: 0.2s ease-in;
+
+    &.-is-active {
+      display: block;
+      opacity: 1;
     }
   }
 

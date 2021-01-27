@@ -801,12 +801,17 @@ body {
       content: '';
       background: var(--green);
       position: absolute;
-      right: 0;
+      right: -10%;
       top: 0;
       width: 400%;
       height: 100%;
       z-index: 1;
     }
+  @media screen and (min-width: 768px) {
+    .c-leadership__aside:before {
+        right: 0
+    }
+      }
   @media screen and (min-width: 768px) {
   .c-leadership__aside {
       flex: 0 0 230px
@@ -843,6 +848,16 @@ body {
   }
   .c-leadership__main h3 {
       font: 700 1.125rem/1.5rem var(--body-font);
+    }
+  .c-leadership__bio,
+  .c-leadership__img {
+    display: none;
+    opacity: 0;
+    transition: 0.2s ease-in;
+  }
+  .c-leadership__bio.-is-active, .c-leadership__img.-is-active {
+      display: block;
+      opacity: 1;
     }
   .c-leadership__list li {
       cursor: pointer;
@@ -1668,6 +1683,10 @@ video {
   margin-bottom: -6rem;
 }
 
+.max-w-xs {
+  max-width: 20rem;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
@@ -1919,6 +1938,9 @@ video {
 /* @import '../node_modules/@glidejs/glide/dist/css/glide.core.min.css'; */
 
 @media (min-width: 640px) {
+  .sm\:max-w-md {
+    max-width: 28rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1932,6 +1954,11 @@ video {
 
   .md\:float-right {
     float: right;
+  }
+
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .md\:mb-0 {
@@ -1956,6 +1983,10 @@ video {
 
   .md\:max-w-xl {
     max-width: 36rem;
+  }
+
+  .md\:max-w-full {
+    max-width: 100%;
   }
 
   .md\:pl-8 {

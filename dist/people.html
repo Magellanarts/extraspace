@@ -221,43 +221,134 @@
 
   <!-- Leadership -->
   <section class="c-leadership u-bg-grey-primary">
-    <div class="l-content-container flex">
+    <div class="l-content-container flex flex-col md:flex-row">
       <aside class="c-leadership__aside py-20">
         <h2 class="u-secondary-heading text-white mb-10">Leadership</h2>
         <ol class="c-leadership__list">
-          <li>Joseph Margolis</li>
-          <li>Scott Stubbs</li>
-          <li>Zach Dickens</li>
-          <li>Matt Herrington</li>
-          <li>Gwyn McNeil</li>
-          <li>Samrat Sondhi</li>
-          <li>Noah Springer</li>
+          <li class="js-leadership-button -is-active" data-person="joseph">Joseph Margolis</li>
+          <li class="js-leadership-button" data-person="scott" >Scott Stubbs</li>
+          <li class="js-leadership-button" data-person="zach" >Zach Dickens</li>
+          <li class="js-leadership-button" data-person="matt" >Matt Herrington</li>
+          <li class="js-leadership-button" data-person="gwyn" >Gwyn McNeil</li>
+          <li class="js-leadership-button" data-person="samrat" >Samrat Sondhi</li>
+          <li class="js-leadership-button" data-person="noah" >Noah Springer</li>
         </ol>
       </aside>
       <div
-        class="c-leadership__photo self-center md:transform md:-translate-x-24 md:-mr-24 lg:-translate-x-48 lg:-mr-48">
-        <img src="i/person-gwyn.png" alt="Gwyn's photo" />
+        class="c-leadership__photo self-center mx-auto max-w-xs sm:max-w-md md:max-w-full md:mx-0 md:transform md:-translate-x-24 md:-mr-24 lg:-translate-x-48 lg:-mr-48 ">
+        <img class="js-leadership-photo c-leadership__img -is-active" data-photo="joseph" src="i/person-joseph.png" alt="joseph's photo" />
+        <img class="js-leadership-photo c-leadership__img" data-photo="joseph" src="i/person-scott.png" alt="scott's photo" />
+
+        <img class="js-leadership-photo c-leadership__img" data-photo="joseph" src="i/person-zach.png" alt="zach's photo" />
+
+        <img class="js-leadership-photo c-leadership__img" data-photo="joseph" src="i/person-samrat.png" alt="samrat's photo" />
+
+        <img class="js-leadership-photo c-leadership__img" data-photo="joseph" src="i/person-noah.png" alt="noah's photo" />
+
+
+        <img class="js-leadership-photo c-leadership__img" data-photo="gwyn" src="i/person-gwyn.png" alt="Gwyn's photo" />
       </div>
       <main class="c-leadership__main text-white py-20 md:pl-8 lg:pl-12 u-bg-grey-primary">
-        <h3>Gwyn McNeal</h3>
-        <div class="mb-5">
-          Executive Vice President and Chief Legal Officer
+        <!-- Jospeh -->
+        <div class="js-leadership-main c-leadership__bio -is-active" data-bio="joseph">
+          <h3>Joseph Margolis</h3>
+          <div class="mb-5"></div>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+            minima autem atque consequuntur blanditiis repellat ullam
+            officiis, obcaecati labore placeat voluptatem eum, ipsum corrupti
+            temporibus magni consequatur porro laudantium iste.
+          </p>
         </div>
 
-        <p>
-          Gwyn G. McNeal has served as Chief Legal Officer since July 2013.
-          Ms. McNeal has been with the Company for more than 12 years. Prior
-          to her current role she was the Vice President and Associate General
-          Counsel of the Company, providing legal support to the Company’s
-          operations team along with overseeing litigation, employment law
-          matters and intellectual property. Ms. McNeal began her career
-          practicing law with Latham & Watkins LLP, San Diego from 1992 to
-          2000. She then served as General Counsel for 3form, Inc. from 2000
-          to 2003. Prior to joining the Company, Ms. McNeal represented the
-          Company as external counsel with Nelson Christensen & Helsten. Ms.
-          McNeal holds a B.A. from Brigham Young University and a J.D. from
-          the University of Southern California.
-        </p>
+        <!-- Scott -->
+        <div class="js-leadership-main c-leadership__bio" data-bio="scott">
+          <h3>Scott Stubb</h3>
+          <div class="mb-5"></div>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+            minima autem atque consequuntur blanditiis repellat ullam
+            officiis, obcaecati labore placeat voluptatem eum, ipsum corrupti
+            temporibus magni consequatur porro laudantium iste.
+          </p>
+        </div>
+
+        <!-- Zach -->
+        <div class="js-leadership-main c-leadership__bio" data-bio="zach">
+          <h3>Zach Dickens</h3>
+          <div class="mb-5"></div>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+            minima autem atque consequuntur blanditiis repellat ullam
+            officiis, obcaecati labore placeat voluptatem eum, ipsum corrupti
+            temporibus magni consequatur porro laudantium iste.
+          </p>
+        </div>
+
+        <!-- Matt -->
+        <div class="js-leadership-main c-leadership__bio" data-bio="matt">
+          <h3>Matt Herrington</h3>
+          <div class="mb-5"></div>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+            minima autem atque consequuntur blanditiis repellat ullam
+            officiis, obcaecati labore placeat voluptatem eum, ipsum corrupti
+            temporibus magni consequatur porro laudantium iste.
+          </p>
+        </div>
+
+        <!-- Gwyn -->
+        <div class="js-leadership-main c-leadership__bio" data-bio="gwyn">
+          <h3>Gwyn McNeal</h3>
+          <div class="mb-5">
+            Executive Vice President and Chief Legal Officer
+          </div>
+
+          <p>
+            Gwyn G. McNeal has served as Chief Legal Officer since July 2013.
+            Ms. McNeal has been with the Company for more than 12 years. Prior
+            to her current role she was the Vice President and Associate
+            General Counsel of the Company, providing legal support to the
+            Company’s operations team along with overseeing litigation,
+            employment law matters and intellectual property. Ms. McNeal began
+            her career practicing law with Latham & Watkins LLP, San Diego
+            from 1992 to 2000. She then served as General Counsel for 3form,
+            Inc. from 2000 to 2003. Prior to joining the Company, Ms. McNeal
+            represented the Company as external counsel with Nelson
+            Christensen & Helsten. Ms. McNeal holds a B.A. from Brigham Young
+            University and a J.D. from the University of Southern California.
+          </p>
+        </div>
+
+        <!-- Samrat -->
+        <div class="js-leadership-main c-leadership__bio" data-bio="samrat">
+          <h3>Samrat Sondhi</h3>
+          <div class="mb-5"></div>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+            minima autem atque consequuntur blanditiis repellat ullam
+            officiis, obcaecati labore placeat voluptatem eum, ipsum corrupti
+            temporibus magni consequatur porro laudantium iste.
+          </p>
+        </div>
+
+        <!-- Noah -->
+        <div class="js-leadership-main c-leadership__bio" data-bio="noah">
+          <h3>Noah Springer</h3>
+          <div class="mb-5"></div>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+            minima autem atque consequuntur blanditiis repellat ullam
+            officiis, obcaecati labore placeat voluptatem eum, ipsum corrupti
+            temporibus magni consequatur porro laudantium iste.
+          </p>
+        </div>
       </main>
     </div>
   </section>
