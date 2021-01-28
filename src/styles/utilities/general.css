@@ -9,6 +9,13 @@
     li {
       list-style: disc inside;
     }
+
+    &.u-green-list {
+      padding-left: 1.125rem;
+      li {
+        list-style: disc outside;
+      }
+    }
   }
 }
 

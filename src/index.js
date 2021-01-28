@@ -1,6 +1,5 @@
 import "./styles.css"
 import 'aos/dist/aos.css';
-
 import { tns } from "../node_modules/tiny-slider/src/tiny-slider";
 
 // AOS
@@ -40,3 +39,15 @@ document.querySelectorAll('.js-leadership-button').forEach(button => {
     this.classList.add('-is-active');
   });
 });
+
+// tabs
+document.querySelectorAll('.js-tab-toggle').forEach(toggle => {
+  toggle.addEventListener('click', function(){
+    const tab = this.getAttribute('data-tab');
+    document.querySelector('.js-tab-toggle.-is-active').classList.remove('-is-active');
+    document.querySelector('.js-tabs-content.-is-active').classList.remove('-is-active');
+
+    this.classList.add('-is-active');
+    document.querySelector(`.js-tabs-content[data-tab="${tab}"]`).classList.add('-is-active');
+  })
+})

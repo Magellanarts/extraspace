@@ -1,0 +1,80 @@
+.c-tabs {
+  &__content {
+    background: #55565a;
+    color: #fff;
+    flex: 1;
+    padding-right: 5%;
+
+    &__interior {
+      display: none;
+      opacity: 0;
+      transition: 0.2s ease-in;
+
+      &.-is-active {
+        display: flex;
+        opacity: 1;
+      }
+
+      > div {
+        @media screen and (min-width: 768px) {
+          &:first-child {
+            flex: 0 0 190px;
+          }
+        }
+      }
+    }
+  }
+
+  &__list {
+    @media screen and (min-width: 768px) {
+      flex: 0 0 320px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      flex: 0 0 458px;
+    }
+  }
+
+  &__set {
+    text-transform: uppercase;
+    font: 600 1.5rem/1 var(--title-font);
+    letter-spacing: 0.1em;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      height: 60px;
+      cursor: pointer;
+      align-items: center;
+      padding: 0 1.5rem;
+      color: #fff;
+      position: relative;
+      width: 287px;
+
+      &.-is-active,
+      &:hover {
+        color: #55565a;
+      }
+
+      &:not(:last-child) {
+        &:before {
+          content: '';
+          height: 1px;
+          position: absolute;
+          bottom: 0;
+          left: 1.5rem;
+          width: calc(100% - 3rem);
+          background-color: #fff;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 200px;
+      }
+
+      @media screen and (min-width: 1024px) {
+        width: 287px;
+      }
+    }
+  }
+}
