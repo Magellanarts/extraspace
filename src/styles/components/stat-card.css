@@ -1,5 +1,5 @@
 .c-stat-card {
-  height: 435px;
+  height: 340px;
   position: relative;
 
   &__overlay {
@@ -45,5 +45,9 @@
     .c-stat-card__overlay {
       opacity: 1;
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 435px;
   }
 }

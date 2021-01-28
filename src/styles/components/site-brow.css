@@ -1,21 +1,31 @@
 .c-site-brow {
+  &.-is-hidden {
+    height: 0;
+    overflow: hidden;
+  }
   li {
     margin-left: 2px;
     a {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 40px;
-      width: 124px;
+      height: 25px;
+      width: 109px;
       background: var(--grey--primary);
       color: #fff;
-      font: 600 14px/17px var(--title-font);
+      font: 600 12px/14px var(--title-font);
       text-transform: uppercase;
       letter-spacing: 0.03em;
       text-align: center;
 
       &:hover {
         background: var(--grey--dark);
+      }
+
+      @media screen and (min-width: 1150px) {
+        font: 600 14px/17px var(--title-font);
+        height: 40px;
+        width: 124px;
       }
     }
 

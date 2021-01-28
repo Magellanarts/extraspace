@@ -1,9 +1,25 @@
 .c-site-header {
+  background-color: #fff;
+  width: 100%;
+  z-index: 9000;
+
   &__main {
-    height: 124px;
+    height: 60px;
 
     &.-with-border {
       border-bottom: solid 1px var(--green);
+    }
+
+    .site-logo {
+      width: 87px;
+    }
+
+    @media screen and (min-width: 1150px) {
+      height: 124px;
+
+      .site-logo {
+        width: 160px;
+      }
     }
   }
 
@@ -11,7 +27,10 @@
     display: none;
     li {
       &:not(:first-child) {
-        margin-left: 28px;
+        margin-left: 22px;
+        @media screen and (min-width: 1220px) {
+          margin-left: 28px;
+        }
       }
 
       a {
@@ -27,8 +46,50 @@
       }
     }
 
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 1150px) {
       display: block;
+    }
+  }
+
+  .c-navigation-toggle {
+    font-size: 30px;
+    @media screen and (min-width: 1150px) {
+      display: none;
+    }
+  }
+
+  &__mobile-navigation {
+    height: 0;
+    overflow: hidden;
+    background: #55575c;
+    padding: 0 25px;
+    transition: all 0.4s ease-in;
+
+    li {
+      display: block;
+
+      &:not(:last-child) {
+        border-bottom: solid 1px var(--green);
+      }
+      a {
+        display: block;
+        padding: 8px 0;
+        text-transform: uppercase;
+        font: 600 20px/24px var(--title-font);
+        color: #fff;
+      }
+
+      &:hover,
+      .active {
+        a {
+          color: var(--green);
+        }
+      }
+    }
+
+    &.-is-open {
+      height: 326px;
+      padding: 20px 25px;
     }
   }
 }

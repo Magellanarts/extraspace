@@ -35,6 +35,12 @@
         }
       }
     }
+    @media screen and (max-width: 767px) {
+      li {
+        display: block !important;
+        text-align: center;
+      }
+    }
   }
 
   &__secondary-navigation {
@@ -70,5 +76,12 @@
   &__copyright {
     font-size: 12px;
     color: var(--grey--dark);
+  }
+
+  @media screen and (max-width: 767px) {
+    background: linear-gradient(180deg, #ededed 7%, rgba(237, 237, 237, 0) 35%);
+    > .l-content-container {
+      border-top: none;
+    }
   }
 }

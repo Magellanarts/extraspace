@@ -11,18 +11,18 @@
 </head>
 
 <body>
-  <header class="c-site-header">
-    <section class="c-site-brow u-bg-green">
-      <div class="l-content-container flex justify-end">
+  <section class="c-site-brow u-bg-green">
+      <div class="l-content-container justify-center flex lg:justify-end">
         <nav role="navigation">
           <ul class="flex">
             <li><a href="vote-proxy.html">Vote Proxy</a></li>
-            <li><a href="#">Investor Site</a></li>
+            <li><a href="https://ir.extraspace.com/investor-relations" target="_blank" rel="noopener">Investor Site</a></li>
             <li><a href="downloads.html">Downloads</a></li>
           </ul>
         </nav>
       </div>
-    </section>
+    </section><header class="c-site-header">
+    
 
     <section class="c-site-header__main l-content-container flex justify-between items-center">
       <a class="site-logo" href="index.html"><img src="i/extraspace-logo.svg" alt="ExtraSpace Storage logo" /></a>
@@ -52,7 +52,35 @@
           </li>
         </ol>
       </nav>
+      <button class="c-navigation-toggle js-navigation-toggle" role="button">
+        <i class="far fa-bars"></i>
+      </button>
     </section>
+    <nav role="navigation" class="c-site-header__mobile-navigation">
+      <ol>
+        <li class="inline-block uppercase ">
+          <a href="ceo-letter.html">CEO Letter</a>
+        </li>
+        <li class="inline-block uppercase ">
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="inline-block uppercase">
+          <a href="platform.html">Platform</a>
+        </li>
+        <li class="inline-block uppercase">
+          <a href="people.html">People</a>
+        </li>
+        <li class="inline-block uppercase ">
+          <a href="performance.html">Performance</a>
+        </li>
+        <li class="inline-block uppercase">
+          <a href="external-growth.html">External Growth</a>
+        </li>
+        <li class="inline-block uppercase ">
+          <a href="sustainability.html">Sustainability</a>
+        </li>
+      </ol>
+    </nav>
   </header>
 
   <section class="home-landing">
@@ -255,10 +283,10 @@
 
   <footer class="c-site-footer">
     <div class="l-content-container pt-7 pb-10">
-      <div class="flex flex-col md:flex-row justify-between mb-12">
-        <div>
-          <figure class="c-site-footer__logo flex items-center">
-            <a href="index.html" class="mr-5">
+      <div class="flex flex-col md:flex-row justify-center md:justify-between mb-8 md:mb-12">
+        <div class="mb-6 md:mb-0">
+          <figure class="c-site-footer__logo flex flex-col md:flex-row items-center">
+            <a href="index.html" class="mb-3 md:mr-5 md:mb-0">
               <img width="104" src="i/extraspace-logo.svg" alt="ExtraSpace Storage logo" />
             </a>
             <figcaption>
@@ -267,8 +295,8 @@
           </figure>
         </div>
 
-        <div class="text-right uppercase">
-          <nav role="navigation" class="c-site-footer__main-navigation mb-4">
+        <div class="md:text-right uppercase flex flex-col md:block">
+          <nav role="navigation" class="c-site-footer__main-navigation md:mb-4 order-last">
             <ol>
               <li>
                 <a href="corporate-information.html">Corporate Information</a>
@@ -280,12 +308,12 @@
                 <a href="forward-looking-statements.html">Forward Looking Statement</a>
               </li>
               <li><a href="downloads.html">Downloads</a></li>
-              <li><a href="#">Investor Site</a></li>
+              <li><a href="https://ir.extraspace.com/investor-relations" target="_blank" rel="noopener">Investor Site</a></li>
               <li><a href="vote-proxy.html">Vote Proxy</a></li>
             </ol>
           </nav>
 
-          <nav role="navigation" class="c-site-footer__secondary-navigation">
+          <nav role="navigation" class="text-center md:text-left c-site-footer__secondary-navigation mb-5 md:mb-0">
             <ol>
               <li><a href="ceo-letter.html">CEO Letter</a></li>
               <li><a href="portfolio.html">Portfolio</a></li>
@@ -298,9 +326,9 @@
           </nav>
         </div>
       </div>
-      <div class="grid grid-cols-3 items-end">
+      <div class="flex justify-center  flex-col md:grid grid-cols-3 items-center md:items-end">
         <div></div>
-        <div class="flex justify-center">
+        <div class="flex justify-center mb-6">
           <ol class="c-site-footer__social grid grid-cols-3 gap-8">
             <li>
               <a href="https://www.facebook.com/extraspace/" target="_blank" rel="noopener"><i

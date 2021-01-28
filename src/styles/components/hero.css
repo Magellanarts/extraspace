@@ -1,5 +1,5 @@
 .c-hero {
-  padding-top: 28px;
+  padding-top: 12px;
   height: 150px;
   box-sizing: border-box;
   overflow: hidden;
@@ -10,5 +10,12 @@
 
   @media screen and (min-width: 768px) {
     height: 373px;
+    padding-top: 28px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .u-secondary-heading {
+      font-size: 18px;
+    }
   }
 }

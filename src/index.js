@@ -51,3 +51,37 @@ document.querySelectorAll('.js-tab-toggle').forEach(toggle => {
     document.querySelector(`.js-tabs-content[data-tab="${tab}"]`).classList.add('-is-active');
   })
 })
+
+// mobile nav
+document.querySelector('.js-navigation-toggle').addEventListener('click', () => {
+  document.querySelector('.c-site-header__mobile-navigation').classList.toggle('-is-open');
+})
+
+// sticky header
+var h = document.querySelector('.c-site-header');
+var brow = document.querySelector('.c-site-brow');
+var stuck = false;
+var stickPoint = getDistance();
+
+function getDistance() {
+  var topDist = h.offsetTop;
+  return topDist;
+}
+
+window.onscroll = function(e) {
+  var distance = getDistance() - window.pageYOffset;
+  var offset = window.pageYOffset;
+  if ( (distance <= 0) && !stuck) {
+    h.style.position = 'fixed';
+    h.style.top = '0px';
+    stuck = true;
+    brow.classList.add('-is-hidden');
+    document.querySelector('body').classList.add('sticky-header');
+    
+  } else if (stuck && (offset <= stickPoint)){
+    h.style.position = 'static';
+    stuck = false;
+     brow.classList.remove('-is-hidden');
+         document.querySelector('body').classList.remove('sticky-header');
+  }
+}
