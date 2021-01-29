@@ -32,5 +32,6 @@
 
 @import 'styles/utilities/text';
 @import 'styles/utilities/colors';
+@import 'styles/utilities/animations';
 
 @import 'styles/utilities/general';

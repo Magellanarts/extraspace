@@ -45,6 +45,7 @@
 }
 
 .home-landing {
+  position: relative;
   padding-top: 3rem;
 
   .tns-nav {
@@ -87,5 +88,30 @@
   &__subheading {
     font: 600 2.25rem/2.6875rem var(--title-font);
     color: var(--grey--dark);
+  }
+
+  &__scroll-indicator {
+    padding-top: 12rem;
+    color: var(--grey--dark);
+    font-size: 1.5rem;
+
+    i {
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-name: bounce;
+      animation-timing-function: ease;
+    }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

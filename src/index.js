@@ -52,10 +52,8 @@ document.querySelectorAll('.js-tab-toggle').forEach(toggle => {
         this.classList.remove('-is-active');
 
         // if small screen, activate the content
-      
-          this.nextElementSibling.classList.remove('-is-active');
-    
-
+        this.nextElementSibling.classList.remove('-is-active');
+  
         // deactivate content
         document.querySelector(`.js-tabs-content[data-tab="${tab}"]`).classList.remove('-is-active');
       }

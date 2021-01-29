@@ -365,6 +365,7 @@ body.sticky-header {
   }
 
 .home-landing {
+  position: relative;
   padding-top: 3rem;
 }
 
@@ -410,6 +411,51 @@ body.sticky-header {
     font: 600 2.25rem/2.6875rem var(--title-font);
     color: var(--grey--dark);
   }
+
+.home-landing__scroll-indicator {
+    padding-top: 12rem;
+    color: var(--grey--dark);
+    font-size: 1.5rem;
+  }
+
+.home-landing__scroll-indicator i {
+      -webkit-animation-duration: 2s;
+              animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-name: bounce;
+              animation-name: bounce;
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease;
+    }
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
 
 
 
@@ -589,7 +635,12 @@ body.sticky-header {
   height: 150px;
   box-sizing: border-box;
   overflow: hidden;
+  position: relative;
 }
+  .c-hero .l-content-container {
+    position: relative;
+    z-index: 5;
+  }
   .c-hero__label {
     font: 600 1.5rem/1 var(--title-font);
   }
@@ -604,6 +655,23 @@ body.sticky-header {
       font-size: 18px;
     }
   }
+  .c-hero__angle {
+    position: absolute;
+    top: 0;
+    max-height: 100%;
+    mix-blend-mode: multiply;
+    transition: 0.5s ease-in;
+  }
+  .c-hero__angle.-left {
+      -webkit-animation: animate-to-right 1.25s forwards;
+              animation: animate-to-right 1.25s forwards;
+      left: 0;
+    }
+  .c-hero__angle.-right {
+      -webkit-animation: animate-toleft 1.25s forwards;
+              animation: animate-toleft 1.25s forwards;
+      right: 0;
+    }
 
 .c-page-intro {
   color: var(--green);
@@ -1628,6 +1696,46 @@ div.text-wrap {
 
 .u-text-grey--primary {
   color: var(--grey--primary) !important;
+}
+
+@-webkit-keyframes animate-to-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes animate-to-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes animate-toleft {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes animate-toleft {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .u-content p:not(:last-child),
