@@ -44,11 +44,51 @@ document.querySelectorAll('.js-leadership-button').forEach(button => {
 document.querySelectorAll('.js-tab-toggle').forEach(toggle => {
   toggle.addEventListener('click', function(){
     const tab = this.getAttribute('data-tab');
-    document.querySelector('.js-tab-toggle.-is-active').classList.remove('-is-active');
-    document.querySelector('.js-tabs-content.-is-active').classList.remove('-is-active');
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
-    this.classList.add('-is-active');
-    document.querySelector(`.js-tabs-content[data-tab="${tab}"]`).classList.add('-is-active');
+    if(this.classList.contains('-is-active')) {
+       if(vw < 786) {
+        // add active to this toggle
+        this.classList.remove('-is-active');
+
+        // if small screen, activate the content
+      
+          this.nextElementSibling.classList.remove('-is-active');
+    
+
+        // deactivate content
+        document.querySelector(`.js-tabs-content[data-tab="${tab}"]`).classList.remove('-is-active');
+      }
+    } else {
+      // remove active from current tab
+      if(document.querySelector('.js-tab-toggle.-is-active')) {
+        document.querySelector('.js-tab-toggle.-is-active').classList.remove('-is-active');
+      }
+
+      // if there is a mobile tab content active, remove it
+      if(document.querySelector('.c-tabs__set__content.-is-active')) {
+        document.querySelector('.c-tabs__set__content.-is-active').classList.remove('-is-active');
+      }
+
+      // remove active from current content
+      if(document.querySelector('.js-tabs-content.-is-active')) {
+        document.querySelector('.js-tabs-content.-is-active').classList.remove('-is-active');
+      }
+  
+    
+      // add active to this toggle
+      this.classList.add('-is-active');
+
+      // if small screen, activate the content
+      if(vw < 786) {
+        this.nextElementSibling.classList.add('-is-active');
+      } 
+
+      // activate content
+      document.querySelector(`.js-tabs-content[data-tab="${tab}"]`).classList.add('-is-active');
+    }
+  
+   
   })
 })
 

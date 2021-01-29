@@ -1,7 +1,9 @@
 .c-tabs {
   &__content {
-    background: #55565a;
-    color: #fff;
+    background: #fff;
+    color: var(--grey--primary);
+    display: none;
+
     flex: 1;
     padding-right: 5%;
 
@@ -13,15 +15,25 @@
       &.-is-active {
         display: flex;
         opacity: 1;
+        flex-direction: column;
+
+        @media screen and (min-width: 1024px) {
+          flex-direction: row;
+        }
       }
 
       > div {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1024px) {
           &:first-child {
             flex: 0 0 190px;
           }
         }
       }
+    }
+    @media screen and (min-width: 768px) {
+      background: #55565a;
+      color: #fff;
+      display: block;
     }
   }
 
@@ -39,6 +51,8 @@
     text-transform: uppercase;
     font: 600 1.5rem/1 var(--title-font);
     letter-spacing: 0.1em;
+    width: 90%;
+    margin: auto;
 
     li {
       display: flex;
@@ -49,7 +63,34 @@
       padding: 0 1.5rem;
       color: #fff;
       position: relative;
-      width: 287px;
+      width: 100%;
+
+      &.c-tabs__set__content {
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        background: #fff;
+        color: var(--grey--primary);
+        display: block;
+        padding: 0 1.5rem;
+        transition: max-height 0.2s ease-in, padding 0.2s ease-in;
+
+        li {
+          color: var(--grey--primary);
+          display: list-item;
+          height: auto;
+          padding: 0;
+          text-transform: none;
+        }
+      }
+
+      .fa-minus {
+        display: none;
+      }
+
+      .fa-arrow-right {
+        display: none;
+      }
 
       &.-is-active,
       &:hover {
@@ -58,6 +99,7 @@
 
       &:not(:last-child) {
         &:before {
+          opacity: 1;
           content: '';
           height: 1px;
           position: absolute;
@@ -68,12 +110,59 @@
         }
       }
 
+      &:nth-last-child(2) {
+        &:before {
+          opacity: 0;
+        }
+      }
+
+      &.-is-active {
+        .fa-plus {
+          display: none;
+        }
+        .fa-minus {
+          display: block;
+        }
+
+        &.c-tabs__set__content {
+          padding: 1.5rem;
+          max-height: 900px;
+        }
+
+        &:not(:last-child) {
+          &:before {
+            opacity: 0;
+
+            @media screen and (min-width: 768px) {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
       @media screen and (min-width: 768px) {
         width: 200px;
+        .fa-plus,
+        .fa-minus {
+          display: none !important;
+        }
+
+        .fa-arrow-right {
+          display: block;
+        }
       }
 
       @media screen and (min-width: 1024px) {
         width: 287px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: auto;
+      margin: 0;
+
+      .c-tabs__set__content {
+        display: none !important;
       }
     }
   }

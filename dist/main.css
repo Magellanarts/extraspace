@@ -1392,8 +1392,9 @@ div.text-wrap {
   }
 
 .c-tabs__content {
-    background: #55565a;
-    color: #fff;
+    background: #fff;
+    color: var(--grey--primary);
+    display: none;
     flex: 1;
     padding-right: 5%;
   }
@@ -1405,12 +1406,27 @@ div.text-wrap {
   .c-tabs__content__interior.-is-active {
         display: flex;
         opacity: 1;
+        flex-direction: column;
       }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
+      .c-tabs__content__interior.-is-active {
+          flex-direction: row
+      }
+        }
+  @media screen and (min-width: 1024px) {
           .c-tabs__content__interior > div:first-child {
             flex: 0 0 190px;
           }
         }
+  @media screen and (min-width: 768px) {
+  .c-tabs__content {
+      background: #55565a;
+
+      color: #fff;
+
+      display: block
+  }
+    }
   @media screen and (min-width: 768px) {
   .c-tabs__list {
       flex: 0 0 320px
@@ -1425,6 +1441,8 @@ div.text-wrap {
     text-transform: uppercase;
     font: 600 1.5rem/1 var(--title-font);
     letter-spacing: 0.1em;
+    width: 90%;
+    margin: auto;
   }
   .c-tabs__set li {
       display: flex;
@@ -1435,13 +1453,37 @@ div.text-wrap {
       padding: 0 1.5rem;
       color: #fff;
       position: relative;
-      width: 287px;
+      width: 100%;
     }
+  .c-tabs__set li.c-tabs__set__content {
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        background: #fff;
+        color: var(--grey--primary);
+        display: block;
+        padding: 0 1.5rem;
+        transition: max-height 0.2s ease-in, padding 0.2s ease-in;
+      }
+  .c-tabs__set li.c-tabs__set__content li {
+          color: var(--grey--primary);
+          display: list-item;
+          height: auto;
+          padding: 0;
+          text-transform: none;
+        }
+  .c-tabs__set li .fa-minus {
+        display: none;
+      }
+  .c-tabs__set li .fa-arrow-right {
+        display: none;
+      }
   .c-tabs__set li.-is-active,
       .c-tabs__set li:hover {
         color: #55565a;
       }
   .c-tabs__set li:not(:last-child):before {
+          opacity: 1;
           content: '';
           height: 1px;
           position: absolute;
@@ -1450,16 +1492,57 @@ div.text-wrap {
           width: calc(100% - 3rem);
           background-color: #fff;
         }
+  .c-tabs__set li:nth-last-child(2):before {
+          opacity: 0;
+        }
+  .c-tabs__set li.-is-active .fa-plus {
+          display: none;
+        }
+  .c-tabs__set li.-is-active .fa-minus {
+          display: block;
+        }
+  .c-tabs__set li.-is-active.c-tabs__set__content {
+          padding: 1.5rem;
+          max-height: 900px;
+        }
+  .c-tabs__set li.-is-active:not(:last-child):before {
+            opacity: 0;
+          }
+  @media screen and (min-width: 768px) {
+          .c-tabs__set li.-is-active:not(:last-child):before {
+              opacity: 1
+          }
+            }
   @media screen and (min-width: 768px) {
     .c-tabs__set li {
         width: 200px
     }
+
+        .c-tabs__set li .fa-plus,
+        .c-tabs__set li .fa-minus {
+          display: none !important;
+        }
+
+        .c-tabs__set li .fa-arrow-right {
+          display: block;
+        }
       }
   @media screen and (min-width: 1024px) {
     .c-tabs__set li {
         width: 287px
     }
       }
+  @media screen and (min-width: 768px) {
+  .c-tabs__set {
+      width: auto;
+
+      margin: 0
+  }
+
+      .c-tabs__set .c-tabs__set__content {
+        display: none !important;
+      }
+    }
 
 .u-primary-heading {
   color: var(--green);
@@ -2257,10 +2340,6 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.mr-12 {
-  margin-right: 3rem;
-}
-
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -2594,6 +2673,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:bg-cover {
+    background-size: cover;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2608,6 +2691,10 @@ video {
 
   .md\:items-end {
     align-items: flex-end;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
   }
 
   .md\:justify-between {
@@ -2742,6 +2829,14 @@ video {
 
   .lg\:justify-end {
     justify-content: flex-end;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:mr-12 {
+    margin-right: 3rem;
   }
 
   .lg\:-mr-48 {
