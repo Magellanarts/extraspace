@@ -85,8 +85,8 @@
   </header>
   <!-- Hero -->
   <section class="c-hero bg-cover bg-center" style="background-image: url(i/hero-sustainability.png);">
-    <img class="c-hero__angle -left" src="i/hero-sustainability-angle-1.png" alt="graphic">
-  <img class="c-hero__angle -right" src="i/hero-sustainability-angle-2.png" alt="graphic">
+    <img class="c-graphic-angle -left aos-animate" src="i/hero-sustainability-angle-1.png" alt="graphic">
+  <img class="c-graphic-angle -right aos-animate" src="i/hero-sustainability-angle-2.png" alt="graphic">
     <div class="l-content-container flex flex-col justify-between h-full">
       <h4 class="c-hero__label uppercase text-white">2020 Annual Report</h4>
 
@@ -186,11 +186,17 @@
     </div>
   </section>
 
-  <section class="c-tabs">
+  <section class="c-tabs relative">
+     <img data-aos-delay="50"
+              data-aos="slider-angle" data-aos-anchor=".c-slider" data-aos-duration="2000"
+              data-aos-once="true" class="c-graphic-angle -left -bottom" src="i/slider-sustainability-angle-1.png" alt="graphic">
+      <img data-aos-delay="100"
+              data-aos="slider-angle" data-aos-anchor=".c-slider" data-aos-duration="2000"
+              data-aos-once="true" class="c-graphic-angle -bottom -lighten  -left" src="i/slider-sustainability-angle-2.png" alt="graphic">
     <div class="flex flex-col md:flex-row">
       <div class="c-tabs__list flex justify-center md:justify-end items-start py-12 md:bg-cover"
         style="background-image: url(i/sustainability-tab-bg.png);">
-        <ol class="c-tabs__set u-bg-green">
+        <ol class="c-tabs__set u-bg-green relative z-10">
           <li data-tab="1" class="-is-active js-tab-toggle">
             <span>Environmental</span><i class="far fa-arrow-right"></i><i class="far fa-plus"></i><i
               class="far fa-minus"></i>

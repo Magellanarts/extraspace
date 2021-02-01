@@ -20,6 +20,8 @@
     padding-top: 4rem;
     min-height: 216px;
 
+    z-index: 10;
+
     @media screen and (min-width: 1024px) {
       padding-top: 0;
       min-height: auto;

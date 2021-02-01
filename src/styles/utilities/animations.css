@@ -8,12 +8,22 @@
   }
 }
 
-@keyframes animate-toleft {
+@keyframes animate-to-left {
   0% {
     transform: translateX(100%);
   }
 
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes animate-left-to-center {
+  0% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }

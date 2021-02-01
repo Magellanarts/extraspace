@@ -1,0 +1,43 @@
+.c-graphic-angle {
+  position: absolute;
+  top: 0;
+  max-height: 100%;
+  mix-blend-mode: multiply;
+  transition: 0.5s ease-in;
+
+  &.-lighten {
+    mix-blend-mode: lighten;
+  }
+
+  &.-bottom {
+    bottom: 0;
+    top: auto;
+  }
+
+  &.aos-animate {
+    &.-left {
+      animation: animate-to-right 1.25s forwards;
+      left: 0;
+    }
+
+    &.-left-center {
+      left: 30%;
+      animation: animate-left-to-center 1.25s forwards;
+    }
+
+    &.-left-center-short {
+      left: 20%;
+      animation: animate-left-to-center 1.25s forwards;
+    }
+
+    &.-left-center-sustainability {
+      left: 10%;
+      animation: animate-left-to-center 1.25s forwards;
+    }
+
+    &.-right {
+      animation: animate-to-left 1.25s forwards;
+      right: 0;
+    }
+  }
+}

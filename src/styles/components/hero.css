@@ -24,22 +24,4 @@
       font-size: 18px;
     }
   }
-
-  &__angle {
-    position: absolute;
-    top: 0;
-    max-height: 100%;
-    mix-blend-mode: multiply;
-    transition: 0.5s ease-in;
-
-    &.-left {
-      animation: animate-to-right 1.25s forwards;
-      left: 0;
-    }
-
-    &.-right {
-      animation: animate-toleft 1.25s forwards;
-      right: 0;
-    }
-  }
 }

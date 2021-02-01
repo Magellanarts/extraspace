@@ -29,6 +29,7 @@
 @import 'styles/components/total-return-list';
 @import 'styles/components/map';
 @import 'styles/components/tabs';
+@import 'styles/components/graphic-angle';
 
 @import 'styles/utilities/text';
 @import 'styles/utilities/colors';
