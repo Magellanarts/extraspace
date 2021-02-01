@@ -480,8 +480,8 @@ body.sticky-header {
   z-index: 9999;
   background-color: #fff;
   transition: 0.5s linear;
-  -webkit-animation: slideDoorUp 1.5s 0.75s forwards;
-          animation: slideDoorUp 1.5s 0.75s forwards;
+  -webkit-animation: slideDoorUp 1.25s 0.75s forwards;
+          animation: slideDoorUp 1.25s 0.75s forwards;
 }
 
 @-webkit-keyframes slideDoorUp {
@@ -490,7 +490,7 @@ body.sticky-header {
   }
 
   100% {
-    transform: translateY(-100%);
+    transform: translateY(-200%);
   }
 }
 
@@ -500,7 +500,7 @@ body.sticky-header {
   }
 
   100% {
-    transform: translateY(-100%);
+    transform: translateY(-200%);
   }
 }
 
