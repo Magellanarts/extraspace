@@ -418,18 +418,10 @@ body.sticky-header {
     top: 9rem;
     color: var(--grey--dark);
     font-size: 1.5rem;
+    transition: 1s ease;
+    -webkit-animation: scroll-indicator 0.75s forwards;
+            animation: scroll-indicator 0.75s forwards;
   }
-
-.home-landing__scroll-indicator i {
-      -webkit-animation-duration: 2s;
-              animation-duration: 2s;
-      -webkit-animation-iteration-count: infinite;
-              animation-iteration-count: infinite;
-      -webkit-animation-name: bounce;
-              animation-name: bounce;
-      -webkit-animation-timing-function: ease;
-              animation-timing-function: ease;
-    }
 
 @media screen and (min-width: 768px) {
   .home-landing__scroll-indicator {
@@ -443,13 +435,13 @@ body.sticky-header {
   }
     }
 
-@-webkit-keyframes bounce {
+@-webkit-keyframes scroll-indicator {
   0% {
     transform: translateY(0);
   }
 
   50% {
-    transform: translateY(-100px);
+    transform: translateY(-200px);
   }
 
   100% {
@@ -457,13 +449,13 @@ body.sticky-header {
   }
 }
 
-@keyframes bounce {
+@keyframes scroll-indicator {
   0% {
     transform: translateY(0);
   }
 
   50% {
-    transform: translateY(-100px);
+    transform: translateY(-200px);
   }
 
   100% {
@@ -480,8 +472,8 @@ body.sticky-header {
   z-index: 9999;
   background-color: #fff;
   transition: 0.5s linear;
-  -webkit-animation: slideDoorUp 1.25s 0.75s forwards;
-          animation: slideDoorUp 1.25s 0.75s forwards;
+  -webkit-animation: slideDoorUp 1.5s 0.75s forwards;
+          animation: slideDoorUp 1.5s 0.75s forwards;
 }
 
 @-webkit-keyframes slideDoorUp {
@@ -490,7 +482,7 @@ body.sticky-header {
   }
 
   100% {
-    transform: translateY(-200%);
+    transform: translateY(-100%);
   }
 }
 
@@ -500,7 +492,7 @@ body.sticky-header {
   }
 
   100% {
-    transform: translateY(-200%);
+    transform: translateY(-100%);
   }
 }
 
@@ -1029,6 +1021,18 @@ body.sticky-header {
   @media screen and (min-width: 1600px) {
   .c-leadership__aside {
       flex: 0 0 34%
+  }
+    }
+  @media screen and (min-width: 768px) {
+  .c-leadership__aside,
+  .c-leadership__main {
+      min-height: 690px
+  }
+    }
+  @media screen and (min-width: 1024px) {
+  .c-leadership__aside,
+  .c-leadership__main {
+      min-height: 590px
   }
     }
   .c-leadership__photo {
@@ -2935,6 +2939,10 @@ video {
 
   .md\:mb-12 {
     margin-bottom: 3rem;
+  }
+
+  .md\:-mb-8 {
+    margin-bottom: -2rem;
   }
 
   .md\:-mb-16 {
