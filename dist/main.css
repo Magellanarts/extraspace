@@ -515,6 +515,14 @@ body.sticky-header {
       border-top-color: var(--grey--primary);
     }
 
+.platform-bar {
+  transform: translateX(100%);
+}
+
+.platform-bar.aos-animate {
+    transform: translateX(0);
+  }
+
 .sustainability-blocks__heading {
     text-transform: uppercase;
     color: #fff;

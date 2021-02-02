@@ -15,3 +15,11 @@
     }
   }
 }
+
+.platform-bar {
+  transform: translateX(100%);
+
+  &.aos-animate {
+    transform: translateX(0);
+  }
+}
