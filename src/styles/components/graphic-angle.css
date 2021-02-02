@@ -16,7 +16,7 @@
 
   &.aos-animate {
     &.-left {
-      animation: animate-to-right 1.25s forwards;
+      /* animation: animate-to-right 1.25s forwards; */
       left: 0;
     }
 
@@ -36,7 +36,7 @@
     }
 
     &.-right {
-      animation: animate-to-left 1.25s forwards;
+      /* animation: animate-to-left 1.25s forwards; */
       right: 0;
     }
   }

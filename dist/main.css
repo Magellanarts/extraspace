@@ -1683,8 +1683,7 @@ div.text-wrap {
     top: auto;
   }
   .c-graphic-angle.aos-animate.-left {
-      -webkit-animation: animate-to-right 1.25s forwards;
-              animation: animate-to-right 1.25s forwards;
+      /* animation: animate-to-right 1.25s forwards; */
       left: 0;
     }
   .c-graphic-angle.aos-animate.-left-center {
@@ -1703,8 +1702,7 @@ div.text-wrap {
               animation: animate-left-to-center 1.25s forwards;
     }
   .c-graphic-angle.aos-animate.-right {
-      -webkit-animation: animate-to-left 1.25s forwards;
-              animation: animate-to-left 1.25s forwards;
+      /* animation: animate-to-left 1.25s forwards; */
       right: 0;
     }
 
@@ -2627,6 +2625,11 @@ video {
   max-width: 32rem;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -2735,6 +2738,10 @@ video {
 
 .relative {
   position: relative;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .resize {
