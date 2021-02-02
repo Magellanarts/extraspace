@@ -96,8 +96,11 @@
     top: 9rem;
     color: var(--grey--dark);
     font-size: 1.5rem;
-    transition: 1s ease;
-    animation: scroll-indicator 0.75s forwards;
+
+    i {
+      transition: 1s linear;
+      animation: scroll-indicator 1.75s 0.5s infinite forwards;
+    }
 
     @media screen and (min-width: 768px) {
       top: 12rem;
@@ -113,7 +116,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-200px);
+    transform: translateY(-19px);
   }
   100% {
     transform: translateY(0);

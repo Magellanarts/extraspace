@@ -418,10 +418,13 @@ body.sticky-header {
     top: 9rem;
     color: var(--grey--dark);
     font-size: 1.5rem;
-    transition: 1s ease;
-    -webkit-animation: scroll-indicator 0.75s forwards;
-            animation: scroll-indicator 0.75s forwards;
   }
+
+.home-landing__scroll-indicator i {
+      transition: 1s linear;
+      -webkit-animation: scroll-indicator 1.75s 0.5s infinite forwards;
+              animation: scroll-indicator 1.75s 0.5s infinite forwards;
+    }
 
 @media screen and (min-width: 768px) {
   .home-landing__scroll-indicator {
@@ -441,7 +444,7 @@ body.sticky-header {
   }
 
   50% {
-    transform: translateY(-200px);
+    transform: translateY(-19px);
   }
 
   100% {
@@ -455,7 +458,7 @@ body.sticky-header {
   }
 
   50% {
-    transform: translateY(-200px);
+    transform: translateY(-19px);
   }
 
   100% {
@@ -1511,16 +1514,26 @@ div.text-wrap {
         opacity: 1;
         flex-direction: column;
       }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1180px) {
       .c-tabs__content__interior.-is-active {
           flex-direction: row
       }
         }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1180px) {
           .c-tabs__content__interior > div:first-child {
             flex: 0 0 190px;
           }
         }
+  @media screen and (min-width: 768px) {
+    .c-tabs__content__interior {
+        min-height: 650px
+    }
+      }
+  @media screen and (min-width: 1440px) {
+    .c-tabs__content__interior {
+        min-height: 500px
+    }
+      }
   @media screen and (min-width: 768px) {
   .c-tabs__content {
       background: #55565a;
@@ -1535,7 +1548,7 @@ div.text-wrap {
       flex: 0 0 320px
   }
     }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1180px) {
   .c-tabs__list {
       flex: 0 0 458px
   }
@@ -1630,7 +1643,7 @@ div.text-wrap {
           display: block;
         }
       }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1180px) {
     .c-tabs__set li {
         width: 287px
     }
@@ -2569,10 +2582,6 @@ video {
 
 .mb-28 {
   margin-bottom: 7rem;
-}
-
-.mb-32 {
-  margin-bottom: 8rem;
 }
 
 .mb-44 {
