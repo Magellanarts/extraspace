@@ -33,6 +33,10 @@
   font: 600 4rem/1 var(--title-font);
 
   @media screen and (min-width: 768px) {
+    font: 600 5rem/1 var(--title-font);
+  }
+
+  @media screen and (min-width: 1024pxpx) {
     font: 600 6rem/1 var(--title-font);
   }
 }
