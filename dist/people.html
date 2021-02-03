@@ -82,9 +82,12 @@
     </nav>
   </header>
   <!-- Hero -->
-  <section class="c-hero bg-cover bg-center" style="background-image: url(i/hero-people.png);">
-     <img class="c-graphic-angle -left aos-animate" src="i/hero-people-angle-1.png" alt="graphic">
-  <img class="c-graphic-angle -right aos-animate" src="i/hero-people-angle-2.png" alt="graphic">
+  <section class="c-hero" >
+    <img data-aos="fade" src="i/hero-people.jpg" data-aos-duration="1000" class="absolute w-full top-0 h-full object-cover" alt="">
+
+    <img data-aos="fade-right" data-aos-anchor=".c-hero" data-aos-once="true" data-aos-duration="1000" data-aos-delay="750" class="c-graphic-angle -left" data-aos-once="true" src="i/hero-people-angle-1.png" alt="graphic" />
+
+    <img data-aos="fade-up" data-aos-anchor=".c-hero" data-aos-duration="1000" data-aos-delay="1000" class="c-graphic-angle -right" src="i/hero-people-angle-2.png" alt="graphic" />
     <div class="l-content-container flex flex-col justify-between h-full">
       <h4 class="c-hero__label uppercase text-white">2020 Annual Report</h4>
 
