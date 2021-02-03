@@ -1909,6 +1909,21 @@ body[data-aos-delay='4000'] [data-aos].aos-animate {
   transition-delay: 4s;
 }
 
+.bar-chart {
+  overflow: hidden;
+}
+
+.bar-chart__bar {
+    transition: 0.3s ease-in;
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+.bar-chart__bar.aos-animate {
+      opacity: 1;
+      transform: translateY(1px);
+    }
+
 .u-content p:not(:last-child),
   .u-content ul:not(:last-child),
   .u-content ol:not(:last-child) {

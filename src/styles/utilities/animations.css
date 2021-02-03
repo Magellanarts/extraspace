@@ -40,3 +40,17 @@ body[data-aos-delay='4000'] [data-aos] {
 body[data-aos-delay='4000'] [data-aos].aos-animate {
   transition-delay: 4s;
 }
+
+.bar-chart {
+  overflow: hidden;
+  &__bar {
+    transition: 0.3s ease-in;
+    transform: translateY(100%);
+    opacity: 0;
+
+    &.aos-animate {
+      opacity: 1;
+      transform: translateY(1px);
+    }
+  }
+}
