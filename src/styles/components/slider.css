@@ -1,5 +1,6 @@
 .c-slider {
   position: relative;
+  overflow: hidden;
 
   &:before {
     content: '';

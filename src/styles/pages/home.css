@@ -44,9 +44,30 @@
   }
 }
 
+@keyframes showLights {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .home-landing {
   position: relative;
   padding-top: 3rem;
+
+  &__lights {
+    opacity: 0;
+    transition: 0.2s ease-in;
+
+    &.-is-visible {
+      animation: showLights 2.5s forwards;
+    }
+  }
 
   .tns-nav {
     max-width: 404px;

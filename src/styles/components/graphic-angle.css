@@ -22,17 +22,17 @@
 
     &.-left-center {
       left: 30%;
-      animation: animate-left-to-center 1.25s forwards;
+      /* animation: animate-left-to-center 1.25s forwards; */
     }
 
     &.-left-center-short {
       left: 20%;
-      animation: animate-left-to-center 1.25s forwards;
+      /* animation: animate-left-to-center 1.25s forwards; */
     }
 
     &.-left-center-sustainability {
-      left: 10%;
-      animation: animate-left-to-center 1.25s forwards;
+      left: 6%;
+      /* animation: animate-left-to-center 1.25s forwards; */
     }
 
     &.-right {

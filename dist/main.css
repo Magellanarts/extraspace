@@ -364,10 +364,48 @@ body.sticky-header {
     max-width: 68%;
   }
 
+@-webkit-keyframes showLights {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showLights {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .home-landing {
   position: relative;
   padding-top: 3rem;
 }
+
+.home-landing__lights {
+    opacity: 0;
+    transition: 0.2s ease-in;
+  }
+
+.home-landing__lights.-is-visible {
+      -webkit-animation: showLights 2.5s forwards;
+              animation: showLights 2.5s forwards;
+    }
 
 .home-landing .tns-nav {
     max-width: 404px;
@@ -829,6 +867,7 @@ body.sticky-header {
 
 .c-slider {
   position: relative;
+  overflow: hidden;
 }
   .c-slider:before {
     content: '';
@@ -1688,18 +1727,15 @@ div.text-wrap {
     }
   .c-graphic-angle.aos-animate.-left-center {
       left: 30%;
-      -webkit-animation: animate-left-to-center 1.25s forwards;
-              animation: animate-left-to-center 1.25s forwards;
+      /* animation: animate-left-to-center 1.25s forwards; */
     }
   .c-graphic-angle.aos-animate.-left-center-short {
       left: 20%;
-      -webkit-animation: animate-left-to-center 1.25s forwards;
-              animation: animate-left-to-center 1.25s forwards;
+      /* animation: animate-left-to-center 1.25s forwards; */
     }
   .c-graphic-angle.aos-animate.-left-center-sustainability {
-      left: 10%;
-      -webkit-animation: animate-left-to-center 1.25s forwards;
-              animation: animate-left-to-center 1.25s forwards;
+      left: 6%;
+      /* animation: animate-left-to-center 1.25s forwards; */
     }
   .c-graphic-angle.aos-animate.-right {
       /* animation: animate-to-left 1.25s forwards; */
@@ -1857,6 +1893,20 @@ div.text-wrap {
   100% {
     transform: translateX(0%);
   }
+}
+
+[data-aos='fade-right-far'] {
+  transform: translate3d(-300%, 0, 0);
+}
+
+[data-aos][data-aos][data-aos-delay='4000'],
+body[data-aos-delay='4000'] [data-aos] {
+  transition-delay: 0;
+}
+
+[data-aos][data-aos][data-aos-delay='4000'].aos-animate,
+body[data-aos-delay='4000'] [data-aos].aos-animate {
+  transition-delay: 4s;
 }
 
 .u-content p:not(:last-child),

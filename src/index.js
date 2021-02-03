@@ -5,6 +5,8 @@ import { tns } from "../node_modules/tiny-slider/src/tiny-slider";
 // AOS
 import AOS from 'aos';
 AOS.init();
+
+// Slider
 if(document.querySelector('.my-slider')) {
   var slider = tns({
     container: '.my-slider',
@@ -17,6 +19,17 @@ if(document.querySelector('.my-slider')) {
     autoplayButton: false,
     autoplayButtonOutput: false,
     navPosition: document.querySelector('.my-slider').getAttribute('data-position') ? document.querySelector('.my-slider').getAttribute('data-position')  : 'top'
+  });
+
+  // bind function to event
+  slider.events.on('indexChanged', function(info, eventName) {
+    if(document.querySelector('.home-landing__lights')) {
+      document.querySelector('.home-landing__lights').classList.remove('-is-visible')
+      setTimeout(function(){
+document.querySelector('.home-landing__lights').classList.add('-is-visible')
+      }, 100)
+      
+    }
   });
 }
 

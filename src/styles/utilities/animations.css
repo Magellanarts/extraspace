@@ -27,3 +27,16 @@
     transform: translateX(0%);
   }
 }
+
+[data-aos='fade-right-far'] {
+  transform: translate3d(-300%, 0, 0);
+}
+
+[data-aos][data-aos][data-aos-delay='4000'],
+body[data-aos-delay='4000'] [data-aos] {
+  transition-delay: 0;
+}
+[data-aos][data-aos][data-aos-delay='4000'].aos-animate,
+body[data-aos-delay='4000'] [data-aos].aos-animate {
+  transition-delay: 4s;
+}
