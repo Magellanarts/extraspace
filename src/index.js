@@ -7,6 +7,31 @@ import AOS from 'aos';
 AOS.init();
 
 // Slider
+if(document.querySelector('.home-slider ')) {
+  var slider = tns({
+    container: '.home-slider',
+    items: 1,
+    slideBy: 'page',
+    autoplay: true,
+    mode: 'gallery',
+    controls: false,
+    nav: true,
+    autoplayButton: false,
+    autoplayButtonOutput: false,
+    navPosition: document.querySelector('.home-slider').getAttribute('data-position') ? document.querySelector('.home-slider').getAttribute('data-position')  : 'top'
+  });
+
+  // bind function to event
+  slider.events.on('indexChanged', function(info, eventName) {
+    if(document.querySelector('.home-landing__lights')) {
+      document.querySelector('.home-landing__lights').classList.remove('-is-visible')
+      setTimeout(function(){
+document.querySelector('.home-landing__lights').classList.add('-is-visible')
+      }, 100)
+      
+    }
+  });
+}
 if(document.querySelector('.my-slider')) {
   var slider = tns({
     container: '.my-slider',
@@ -19,17 +44,6 @@ if(document.querySelector('.my-slider')) {
     autoplayButton: false,
     autoplayButtonOutput: false,
     navPosition: document.querySelector('.my-slider').getAttribute('data-position') ? document.querySelector('.my-slider').getAttribute('data-position')  : 'top'
-  });
-
-  // bind function to event
-  slider.events.on('indexChanged', function(info, eventName) {
-    if(document.querySelector('.home-landing__lights')) {
-      document.querySelector('.home-landing__lights').classList.remove('-is-visible')
-      setTimeout(function(){
-document.querySelector('.home-landing__lights').classList.add('-is-visible')
-      }, 100)
-      
-    }
   });
 }
 
