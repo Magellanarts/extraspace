@@ -901,8 +901,25 @@ body.sticky-header {
     color: #fff;
   }
   .c-slider__heading span {
+      display: block;
       font: 600 2.255rem/1 var(--title-font);
     }
+  .c-slider__heading.-sustainability-1 {
+      font: 600 3.75rem/1 var(--title-font);
+    }
+  .c-slider__heading.-sustainability-1 span {
+        padding-top: 0.25rem;
+        font: 600 2.3rem/2.75rem var(--title-font);
+      }
+  .c-slider__heading.-sustainability-2 {
+      font: 600 3.875rem/1 var(--title-font);
+    }
+  .c-slider__heading.-sustainability-3 {
+      font: 600 4.5rem/1 var(--title-font);
+    }
+  .c-slider__heading.-sustainability-3 span {
+        font-size: 7.5rem;
+      }
   .c-slider .tns-nav {
     position: absolute;
     bottom: 1.75rem;

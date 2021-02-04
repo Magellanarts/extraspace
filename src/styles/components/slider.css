@@ -34,7 +34,29 @@
     color: #fff;
 
     span {
+      display: block;
       font: 600 2.255rem/1 var(--title-font);
+    }
+
+    &.-sustainability-1 {
+      font: 600 3.75rem/1 var(--title-font);
+
+      span {
+        padding-top: 0.25rem;
+        font: 600 2.3rem/2.75rem var(--title-font);
+      }
+    }
+
+    &.-sustainability-2 {
+      font: 600 3.875rem/1 var(--title-font);
+    }
+
+    &.-sustainability-3 {
+      font: 600 4.5rem/1 var(--title-font);
+
+      span {
+        font-size: 7.5rem;
+      }
     }
   }
 
