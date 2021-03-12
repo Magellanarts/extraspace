@@ -12,6 +12,32 @@
   }
 }
 
+.p-home__eg {
+  position: relative;
+
+  &:after {
+    content: '';
+    height: 72%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      2.68deg,
+      #dfdede 4.01%,
+      rgba(223, 222, 222, 0) 99.56%
+    );
+    z-index: -1;
+  }
+}
+
+.p-home__eg-boxes {
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+  max-width: 23%;
+}
+
 .p-home-content-block {
   @media screen and (min-width: 768px) {
     flex: 0 0 280px;
