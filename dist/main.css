@@ -2611,6 +2611,10 @@ video {
   margin-right: auto;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
