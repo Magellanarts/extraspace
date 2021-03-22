@@ -979,6 +979,18 @@ body.sticky-header {
       .c-slider__heading span {
         font: 600 2.875rem/1 var(--title-font);
       }
+      .c-slider__heading.-glassdoor {
+        font-size: 120px;
+        line-height: 98px;
+      }
+        .c-slider__heading.-glassdoor .one {
+          font-size: 46px;
+          line-height: 55px;
+        }
+        .c-slider__heading.-glassdoor .two {
+          font-size: 36px;
+          line-height: 43px;
+        }
 
     .c-slider .tns-nav {
       bottom: 3.25rem;
