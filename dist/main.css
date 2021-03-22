@@ -1614,8 +1614,16 @@ div.text-wrap {
   .c-tabs__content__interior {
       display: none;
       opacity: 0;
+      font-weight: 400;
       transition: 0.2s ease-in;
+      font-size: 1.375rem;
+      line-height: 1.5625rem;
+      font-family: var(--body-font);
+      letter-spacing: 0.03em;
     }
+  .c-tabs__content__interior li:not(:last-child) {
+        margin-bottom: 10px;
+      }
   .c-tabs__content__interior.-is-active {
         display: flex;
         opacity: 1;
@@ -1628,7 +1636,7 @@ div.text-wrap {
         }
   @media screen and (min-width: 1180px) {
           .c-tabs__content__interior > div:first-child {
-            flex: 0 0 190px;
+            flex: 1;
           }
         }
   @media screen and (min-width: 768px) {
@@ -3204,14 +3212,6 @@ video {
 
   .lg\:justify-end {
     justify-content: flex-end;
-  }
-
-  .lg\:mb-0 {
-    margin-bottom: 0px;
-  }
-
-  .lg\:mr-12 {
-    margin-right: 3rem;
   }
 
   .lg\:-mr-48 {

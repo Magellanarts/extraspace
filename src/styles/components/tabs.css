@@ -10,7 +10,16 @@
     &__interior {
       display: none;
       opacity: 0;
+      font-weight: 400;
       transition: 0.2s ease-in;
+      font-size: 1.375rem;
+      line-height: 1.5625rem;
+      font-family: var(--body-font);
+      letter-spacing: 0.03em;
+
+      li:not(:last-child) {
+        margin-bottom: 10px;
+      }
 
       &.-is-active {
         display: flex;
@@ -25,7 +34,7 @@
       > div {
         @media screen and (min-width: 1180px) {
           &:first-child {
-            flex: 0 0 190px;
+            flex: 1;
           }
         }
       }
