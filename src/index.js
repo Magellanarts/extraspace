@@ -6,6 +6,13 @@ import { tns } from "../node_modules/tiny-slider/src/tiny-slider";
 import AOS from 'aos';
 AOS.init();
 
+// Cookies
+var getCookie = function (name) {
+	var value = "; " + document.cookie;
+	var parts = value.split("; " + name + "=");
+	if (parts.length == 2) return parts.pop().split(";").shift();
+};
+
 // Slider
 if(document.querySelector('.home-slider ')) {
   var slider = tns({
