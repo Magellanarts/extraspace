@@ -286,6 +286,10 @@ body.sticky-header {
   }
     }
 
+em {
+  font-style: italic;
+}
+
 .l-content-container {
   width: 90%;
   max-width: 1262px;
