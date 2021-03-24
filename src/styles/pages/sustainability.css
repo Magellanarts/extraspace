@@ -7,6 +7,10 @@
     text-align: center;
   }
 
+  &__subheading {
+    font: 400 1.25rem/1.875rem Arial;
+  }
+
   &__content {
     font: 400 1.75rem/2.25rem var(--title-font);
     letter-spacing: 0.02em;

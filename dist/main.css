@@ -598,6 +598,9 @@ em {
     letter-spacing: 0.05em;
     text-align: center;
   }
+  .sustainability-blocks__subheading {
+    font: 400 1.25rem/1.875rem Arial;
+  }
   .sustainability-blocks__content {
     font: 400 1.75rem/2.25rem var(--title-font);
     letter-spacing: 0.02em;
@@ -2585,6 +2588,18 @@ video {
   }
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .bg-center {
   background-position: center;
 }
@@ -2773,10 +2788,6 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .py-6 {
